@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "noErrorTruncation": true,
+    "moduleResolution": "node",
+    "allowJs": true,
+    "checkJs": false,
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "target": "es6",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "typeRoots": [
+      "./node_modules/@types",
+      "./apps/declarations.d.ts",
+    ],
+    "types": ["node", "express", "dotenv", "jest", "lodash", "bluebird-global"],
+  },
+  "baseUrl": "./",
+  "exclude": [
+    "node_modules",
+    "dist"
+  ],
+  "include": [
+    "src/**/*",
+  ]
+}
